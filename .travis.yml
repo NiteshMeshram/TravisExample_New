@@ -9,13 +9,10 @@ env:
   - PROFILE_NAME="GPS_QA_AdHoc_Profile"
   - secure: V42CRnp+Pg1bUBaI5BFkclHSeWpxQ5mtElwAqRFx0ZH2jXIlxBGZHWhAGKwwOCcmhfOJgxlaHf+Bg3lakMktboGeTlsrxEExOoqaGsHyRdjgXF/d6ZSkbqLQa/SbPpVV5cznQSHx+Ich5BnHAaO9+l5yoj5b2vDf2wITa1stDK41oRMxgJGYJPABcILKr2yCaymXMpqbnBwlxVk50CwIkRVFdEHG9RhNj/y0DZhH2WNW1vfLhOoh/HierS5UfWNaqpf+qMHHrP5t8Vxe8udeuScfyzNFrUuFYtybpqF1sdWwzrLmZrtZruaBkxlOZostWPxi4CrH7sqRm0DqLKHYDnHMSp4rxyLiHTHnkmRmGQKnso+eCtRFaiVVYAQTAHRkmHaJg8CvYgqD9+faSGW4wZNAN/Hj6XM6GML6ytnC1S0YMZdywF7fzpYtVxIUwZfZiUHVdximfFkdbR9KLSM41siuYXFI4Vrp7UXNq6LZ3DODvvJhgrIhiEL+xnsKKuV6YI/gamvvrlpX1Qb0HGX+NwTkjWRVTvZrfrOr+mmpJ+6TjzSNWJ5v3Q6TWl0pX/8Mx6XLZq8es+noHcsvvZdtfpk79NvcOYNdZCzQKL+43zTOvKM4XRuW5qmv18IVcutYx9kjDp7Pfn/D8njDPn2ho4OfMbixOFYMSKq6SchokJU=
 before_script:
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in secureCerts/GPS_QA_AdHoc_Profile.mobileprovision.enc
-  -d -a -out secureCerts/GPS_QA_AdHoc_Profile.mobileprovision
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in secureCerts/dist.cer.enc -d -a -out
-  secureCerts/dist.cer
-- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in secureCerts/dist.p12.enc -d -a -out
-  secureCerts/dist.p12
-- secureCerts/add-key.sh
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in secureCerts/GPS_QA_AdHoc_Profile.mobileprovision.enc -d -a -out secureCerts/GPS_QA_AdHoc_Profile.mobileprovision
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in secureCerts/dist.cer.enc -d -a -out secureCerts/dist.cer
+- openssl aes-256-cbc -k "$ENCRYPTION_SECRET" -in secureCerts/dist.p12.enc -d -a -out secureCerts/dist.p12
+- sh secureCerts/add-key.sh
 before_install: 
 - chmod a+x secureCerts/add-key.sh
 - chmod a+x secureCerts/remove-key.sh
