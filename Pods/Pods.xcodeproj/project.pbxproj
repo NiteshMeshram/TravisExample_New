@@ -33,15 +33,15 @@
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		473AE2F5B8B278494BC1523F38B65F13 /* Pods-TravisCIBlog-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravisCIBlog-Info.plist"; sourceTree = "<group>"; };
 		5F818B49E1ADB5D62811BC32B7DC1E71 /* Pods-TravisCIBlog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravisCIBlog-umbrella.h"; sourceTree = "<group>"; };
-		67E050A4A1C701B4AF0548EEA25851B6 /* Pods_TravisCIBlogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravisCIBlogTests.framework; path = "Pods-TravisCIBlogTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67E050A4A1C701B4AF0548EEA25851B6 /* Pods_TravisCIBlogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisCIBlogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F83C6C723468A7E82FAACC6B9C85D63 /* Pods-TravisCIBlogTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravisCIBlogTests-Info.plist"; sourceTree = "<group>"; };
 		823594027F5106DBCCB20020E82594B6 /* Pods-TravisCIBlogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravisCIBlogTests.debug.xcconfig"; sourceTree = "<group>"; };
 		83A159026255D201195711D9A9975FAA /* Pods-TravisCIBlog-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravisCIBlog-acknowledgements.markdown"; sourceTree = "<group>"; };
 		84375673551D81E6AED71282AC534A9B /* Pods-TravisCIBlogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravisCIBlogTests.release.xcconfig"; sourceTree = "<group>"; };
 		96B52A3535E99AD099490657D3EAC75A /* Pods-TravisCIBlog-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravisCIBlog-acknowledgements.plist"; sourceTree = "<group>"; };
 		9B7315E4665E91F14C4A99A54AEA5B22 /* Pods-TravisCIBlogTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravisCIBlogTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B89703FC637F703503D4A63C614103AE /* Pods_TravisCIBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravisCIBlog.framework; path = "Pods-TravisCIBlog.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B89703FC637F703503D4A63C614103AE /* Pods_TravisCIBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisCIBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDAF148B11A9CE513518F9C9D82F7336 /* Pods-TravisCIBlogTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravisCIBlogTests-dummy.m"; sourceTree = "<group>"; };
 		D5FCB5834AF4AD2840F14C86EEE82CBD /* Pods-TravisCIBlogTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravisCIBlogTests-umbrella.h"; sourceTree = "<group>"; };
 		EE523B1E850E612238125ABC532E4307 /* Pods-TravisCIBlogTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravisCIBlogTests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -308,6 +308,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -406,6 +407,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -445,6 +447,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -484,6 +487,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
