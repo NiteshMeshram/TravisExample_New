@@ -17,6 +17,9 @@ before_script:
   secureCerts/dist.p12
 - secureCerts/add-key.sh
 before_install: 
+- chmod a+x secureCerts/add-key.sh
+- chmod a+x secureCerts/remove-key.sh
+- chmod a+x secureCerts/sign-and-upload.sh
 script:
 #- travis_retry xcodebuild -workspace $APP_WORKSPACE_PATH -scheme Debug -sdk iphoneos
   #OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
