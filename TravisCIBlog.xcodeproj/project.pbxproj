@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		172362B25701039321DA8D9D /* Pods_TravisCIBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB924ECF17446796E32A681 /* Pods_TravisCIBlog.framework */; };
+		102D92BE5E87F7C603385581 /* Pods_TravisCIBlog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB81492B622DEA1C93B45F06 /* Pods_TravisCIBlog.framework */; };
 		386E6E4822D49EAD00109006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E6E4722D49EAD00109006 /* AppDelegate.swift */; };
 		386E6E4A22D49EAD00109006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E6E4922D49EAD00109006 /* ViewController.swift */; };
 		386E6E4D22D49EAD00109006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386E6E4B22D49EAD00109006 /* Main.storyboard */; };
@@ -16,7 +16,7 @@
 		386E6E5522D49EB000109006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386E6E5322D49EB000109006 /* LaunchScreen.storyboard */; };
 		386E6E6022D49EB000109006 /* TravisCIBlogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E6E5F22D49EB000109006 /* TravisCIBlogTests.swift */; };
 		386E6E6B22D49EB000109006 /* TravisCIBlogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E6E6A22D49EB000109006 /* TravisCIBlogUITests.swift */; };
-		6BF4228B7C07C4818EEF8A45 /* Pods_TravisCIBlogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653E791E908746A5C2446BBC /* Pods_TravisCIBlogTests.framework */; };
+		458AD3176B5DCF89464982F2 /* Pods_TravisCIBlogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE6E05448C8628E67989A60E /* Pods_TravisCIBlogTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,12 +51,12 @@
 		386E6E6622D49EB000109006 /* TravisCIBlogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisCIBlogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		386E6E6A22D49EB000109006 /* TravisCIBlogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisCIBlogUITests.swift; sourceTree = "<group>"; };
 		386E6E6C22D49EB000109006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		653E791E908746A5C2446BBC /* Pods_TravisCIBlogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisCIBlogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AB924ECF17446796E32A681 /* Pods_TravisCIBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisCIBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5EBA9BC778F99ADF7A23F7D /* Pods-TravisCIBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIBlog.debug.xcconfig"; path = "Target Support Files/Pods-TravisCIBlog/Pods-TravisCIBlog.debug.xcconfig"; sourceTree = "<group>"; };
-		CBBEF3DAF6104744FCC463CC /* Pods-TravisCIBlogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIBlogTests.release.xcconfig"; path = "Target Support Files/Pods-TravisCIBlogTests/Pods-TravisCIBlogTests.release.xcconfig"; sourceTree = "<group>"; };
-		D78E7B45A88B513B4AA0131B /* Pods-TravisCIBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIBlog.release.xcconfig"; path = "Target Support Files/Pods-TravisCIBlog/Pods-TravisCIBlog.release.xcconfig"; sourceTree = "<group>"; };
-		DA2DC40325D07D196CF87633 /* Pods-TravisCIBlogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIBlogTests.debug.xcconfig"; path = "Target Support Files/Pods-TravisCIBlogTests/Pods-TravisCIBlogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		463D0FAF3C5E953B6927A3ED /* Pods-TravisCIBlog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIBlog.debug.xcconfig"; path = "Target Support Files/Pods-TravisCIBlog/Pods-TravisCIBlog.debug.xcconfig"; sourceTree = "<group>"; };
+		4CCA6B00236F3083D69DC90D /* Pods-TravisCIBlogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIBlogTests.release.xcconfig"; path = "Target Support Files/Pods-TravisCIBlogTests/Pods-TravisCIBlogTests.release.xcconfig"; sourceTree = "<group>"; };
+		6880FEFE6D3A433C135A0C4A /* Pods-TravisCIBlogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIBlogTests.debug.xcconfig"; path = "Target Support Files/Pods-TravisCIBlogTests/Pods-TravisCIBlogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE6E05448C8628E67989A60E /* Pods_TravisCIBlogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisCIBlogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB81492B622DEA1C93B45F06 /* Pods_TravisCIBlog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisCIBlog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6A680233B1464C834FE944 /* Pods-TravisCIBlog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisCIBlog.release.xcconfig"; path = "Target Support Files/Pods-TravisCIBlog/Pods-TravisCIBlog.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				172362B25701039321DA8D9D /* Pods_TravisCIBlog.framework in Frameworks */,
+				102D92BE5E87F7C603385581 /* Pods_TravisCIBlog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6BF4228B7C07C4818EEF8A45 /* Pods_TravisCIBlogTests.framework in Frameworks */,
+				458AD3176B5DCF89464982F2 /* Pods_TravisCIBlogTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,10 +89,10 @@
 		34C16EB78DEA9891C249D6F7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A5EBA9BC778F99ADF7A23F7D /* Pods-TravisCIBlog.debug.xcconfig */,
-				D78E7B45A88B513B4AA0131B /* Pods-TravisCIBlog.release.xcconfig */,
-				DA2DC40325D07D196CF87633 /* Pods-TravisCIBlogTests.debug.xcconfig */,
-				CBBEF3DAF6104744FCC463CC /* Pods-TravisCIBlogTests.release.xcconfig */,
+				463D0FAF3C5E953B6927A3ED /* Pods-TravisCIBlog.debug.xcconfig */,
+				CF6A680233B1464C834FE944 /* Pods-TravisCIBlog.release.xcconfig */,
+				6880FEFE6D3A433C135A0C4A /* Pods-TravisCIBlogTests.debug.xcconfig */,
+				4CCA6B00236F3083D69DC90D /* Pods-TravisCIBlogTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -105,7 +105,7 @@
 				386E6E6922D49EB000109006 /* TravisCIBlogUITests */,
 				386E6E4522D49EAD00109006 /* Products */,
 				34C16EB78DEA9891C249D6F7 /* Pods */,
-				E3582F5B9D929F9D592DE006 /* Frameworks */,
+				DC882F2D6F201E9F9E32667A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,11 +151,11 @@
 			path = TravisCIBlogUITests;
 			sourceTree = "<group>";
 		};
-		E3582F5B9D929F9D592DE006 /* Frameworks */ = {
+		DC882F2D6F201E9F9E32667A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8AB924ECF17446796E32A681 /* Pods_TravisCIBlog.framework */,
-				653E791E908746A5C2446BBC /* Pods_TravisCIBlogTests.framework */,
+				CB81492B622DEA1C93B45F06 /* Pods_TravisCIBlog.framework */,
+				BE6E05448C8628E67989A60E /* Pods_TravisCIBlogTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,7 +167,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 386E6E6F22D49EB000109006 /* Build configuration list for PBXNativeTarget "TravisCIBlog" */;
 			buildPhases = (
-				B70571523C6DB6A7C82F6617 /* [CP] Check Pods Manifest.lock */,
+				9B487E90887FD1CED832D10B /* [CP] Check Pods Manifest.lock */,
 				386E6E4022D49EAD00109006 /* Sources */,
 				386E6E4122D49EAD00109006 /* Frameworks */,
 				386E6E4222D49EAD00109006 /* Resources */,
@@ -185,7 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 386E6E7222D49EB000109006 /* Build configuration list for PBXNativeTarget "TravisCIBlogTests" */;
 			buildPhases = (
-				BFFEDA6615D89FADC9D77E63 /* [CP] Check Pods Manifest.lock */,
+				B418F85948E4C8B5F41CDDC3 /* [CP] Check Pods Manifest.lock */,
 				386E6E5722D49EB000109006 /* Sources */,
 				386E6E5822D49EB000109006 /* Frameworks */,
 				386E6E5922D49EB000109006 /* Resources */,
@@ -289,7 +289,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B70571523C6DB6A7C82F6617 /* [CP] Check Pods Manifest.lock */ = {
+		9B487E90887FD1CED832D10B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,7 +311,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BFFEDA6615D89FADC9D77E63 /* [CP] Check Pods Manifest.lock */ = {
+		B418F85948E4C8B5F41CDDC3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -521,7 +521,7 @@
 		};
 		386E6E7022D49EB000109006 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A5EBA9BC778F99ADF7A23F7D /* Pods-TravisCIBlog.debug.xcconfig */;
+			baseConfigurationReference = 463D0FAF3C5E953B6927A3ED /* Pods-TravisCIBlog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: V2Solutions Inc (X5E35DL2Y9)";
@@ -543,7 +543,7 @@
 		};
 		386E6E7122D49EB000109006 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D78E7B45A88B513B4AA0131B /* Pods-TravisCIBlog.release.xcconfig */;
+			baseConfigurationReference = CF6A680233B1464C834FE944 /* Pods-TravisCIBlog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: V2Solutions Inc (X5E35DL2Y9)";
@@ -565,9 +565,9 @@
 		};
 		386E6E7322D49EB000109006 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA2DC40325D07D196CF87633 /* Pods-TravisCIBlogTests.debug.xcconfig */;
+			baseConfigurationReference = 6880FEFE6D3A433C135A0C4A /* Pods-TravisCIBlogTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5E35DL2Y9;
@@ -587,9 +587,9 @@
 		};
 		386E6E7422D49EB000109006 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBBEF3DAF6104744FCC463CC /* Pods-TravisCIBlogTests.release.xcconfig */;
+			baseConfigurationReference = 4CCA6B00236F3083D69DC90D /* Pods-TravisCIBlogTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5E35DL2Y9;
@@ -610,7 +610,7 @@
 		386E6E7622D49EB000109006 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5E35DL2Y9;
 				INFOPLIST_FILE = TravisCIBlogUITests/Info.plist;
@@ -630,7 +630,7 @@
 		386E6E7722D49EB000109006 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5E35DL2Y9;
 				INFOPLIST_FILE = TravisCIBlogUITests/Info.plist;
