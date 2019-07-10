@@ -24,7 +24,7 @@ script:
   #OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 
 #- xcodebuild -workspace $APP_WORKSPACE_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO 
-- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO 
+- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO | xcpretty -c
 #'CODE_SIGN_RESOURCE_RULES_PATH=$(SDKROOT)/ResourceRules.plist'
 after_success:
 - secureCerts/sign-and-upload.sh
