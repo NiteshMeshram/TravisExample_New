@@ -33,12 +33,7 @@ script:
 #- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release clean archive -archivePath $OUTPUTDIR DEVELOPMENT_TEAM="X5E35DL2Y9"
 #- xcodebuild -exportArchive -archivePath $OUTPUTDIR -exportOptionsPlist exportOptions.plist -exportPath $OUTPUTDIR
 
-- xcodebuild \
-        -exportArchive \
-        -exportFormat IPA \
-        -archivePath build/TravisCIBlog.xcarchive \
-        -exportPath $OUTPUTDIR/TravisCIBlog.ipa \
-        -exportProvisioningProfile "$PROFILE_NAME"
+- xcodebuild -exportArchive -exportFormat IPA -archivePath OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -exportProvisioningProfile "$PROFILE_NAME"
 
 
 #xcodebuild -project <path/to/project.xcproj> -scheme <scheme-name> -configuration <config-name> clean archive -archivePath <output-path> DEVELOPMENT_TEAM=<dev-team-id>
