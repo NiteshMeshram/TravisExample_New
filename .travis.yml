@@ -28,14 +28,14 @@ script:
   #OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 
 #- xcodebuild -workspace $APP_WORKSPACE_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO 
-#- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO | xcpretty -c
 
 #- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release clean archive -archivePath $OUTPUTDIR DEVELOPMENT_TEAM="X5E35DL2Y9"
 #- xcodebuild -exportArchive -archivePath $OUTPUTDIR -exportOptionsPlist exportOptions.plist -exportPath $OUTPUTDIR
 
-- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive archive PROVISIONING_PROFILE="$PROFILE_NAME" CODE_SIGN_IDENTITY="iOS Distribution"
+#- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive archive PROVISIONING_PROFILE="$PROFILE_NAME" CODE_SIGN_IDENTITY="iOS Distribution"
 
-- xcodebuild -exportArchive -exportFormat ipa -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -PROVISIONING_PROFILE_SPECIFIER "$PROFILE_NAME"
+#- xcodebuild -exportArchive -exportFormat ipa -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -PROVISIONING_PROFILE_SPECIFIER "$PROFILE_NAME"
 
 
 #xcodebuild -project <path/to/project.xcproj> -scheme <scheme-name> -configuration <config-name> clean archive -archivePath <output-path> DEVELOPMENT_TEAM=<dev-team-id>
@@ -43,6 +43,6 @@ script:
 
 #'CODE_SIGN_RESOURCE_RULES_PATH=$(SDKROOT)/ResourceRules.plist'
 after_success:
-#- secureCerts/sign-and-upload.sh
+- secureCerts/sign-and-upload.sh
 after_script:
 - secureCerts/remove-key.sh
