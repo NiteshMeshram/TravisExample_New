@@ -4,6 +4,7 @@ env:
   global:
   - APP_NAME="GPS-QA"
   - APP_SCRIPT_PATH="$PWD/secureCerts"
+  - APP_PROJ_PATH="$PWD/TravisCIBlog.xcodeproj"
   - APP_WORKSPACE_PATH="$PWD/TravisCIBlog.xcworkspace"
   - 'DEVELOPER_NAME="iPhone Distribution: V2Solutions Inc (X5E35DL2Y9)"'
   - PROFILE_NAME="GPS_QA_AdHoc_Profile"
@@ -17,12 +18,13 @@ before_install:
 - chmod a+x secureCerts/add-key.sh
 - chmod a+x secureCerts/remove-key.sh
 - chmod a+x secureCerts/sign-and-upload.sh
-- pod install
+#- pod install
 script:
 #- travis_retry xcodebuild -workspace $APP_WORKSPACE_PATH -scheme Debug -sdk iphoneos
   #OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 
-- xcodebuild -workspace $APP_WORKSPACE_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO 
+#- xcodebuild -workspace $APP_WORKSPACE_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO 
+- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO 
 #'CODE_SIGN_RESOURCE_RULES_PATH=$(SDKROOT)/ResourceRules.plist'
 after_success:
 - secureCerts/sign-and-upload.sh
