@@ -94,7 +94,7 @@
 				6880FEFE6D3A433C135A0C4A /* Pods-TravisCIBlogTests.debug.xcconfig */,
 				4CCA6B00236F3083D69DC90D /* Pods-TravisCIBlogTests.release.xcconfig */,
 			);
-			path = Pods;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		386E6E3B22D49EAD00109006 = {
