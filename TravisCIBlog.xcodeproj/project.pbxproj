@@ -15,6 +15,7 @@
 		386E6E5522D49EB000109006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 386E6E5322D49EB000109006 /* LaunchScreen.storyboard */; };
 		386E6E6022D49EB000109006 /* TravisCIBlogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E6E5F22D49EB000109006 /* TravisCIBlogTests.swift */; };
 		386E6E6B22D49EB000109006 /* TravisCIBlogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386E6E6A22D49EB000109006 /* TravisCIBlogUITests.swift */; };
+		386E6E7B22D5EB4E00109006 /* exportOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 386E6E7A22D5EB4E00109006 /* exportOptions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		386E6E6622D49EB000109006 /* TravisCIBlogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisCIBlogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		386E6E6A22D49EB000109006 /* TravisCIBlogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisCIBlogUITests.swift; sourceTree = "<group>"; };
 		386E6E6C22D49EB000109006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		386E6E7A22D5EB4E00109006 /* exportOptions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = exportOptions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		386E6E3B22D49EAD00109006 = {
 			isa = PBXGroup;
 			children = (
+				386E6E7A22D5EB4E00109006 /* exportOptions.plist */,
 				386E6E4622D49EAD00109006 /* TravisCIBlog */,
 				386E6E5E22D49EB000109006 /* TravisCIBlogTests */,
 				386E6E6922D49EB000109006 /* TravisCIBlogUITests */,
@@ -235,6 +238,7 @@
 				386E6E5522D49EB000109006 /* LaunchScreen.storyboard in Resources */,
 				386E6E5222D49EB000109006 /* Assets.xcassets in Resources */,
 				386E6E4D22D49EAD00109006 /* Main.storyboard in Resources */,
+				386E6E7B22D5EB4E00109006 /* exportOptions.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
