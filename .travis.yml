@@ -25,7 +25,8 @@ before_install:
 #- pod install
 script:
 
-- xcodebuild -exportArchive -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -exportFormat ipa -PROVISIONING_PROFILE="$PROVISIONING_PROFILE" -CODE_SIGN_IDENTITY="$DEVELOPER_NAME"
+#- xcodebuild -exportArchive -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -exportFormat ipa -PROVISIONING_PROFILE="$PROVISIONING_PROFILE" -CODE_SIGN_IDENTITY="$DEVELOPER_NAME"
+- xcodebuild -exportArchive -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -exportOptionsPlist $PWD/exportOptions.plist
 - echo "All Files and folder"
 - ls $OUTPUTDIR/
 
