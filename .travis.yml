@@ -27,16 +27,15 @@ script:
 
 #- xcodebuild -exportArchive -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -exportFormat ipa -PROVISIONING_PROFILE="$PROVISIONING_PROFILE" -CODE_SIGN_IDENTITY="$DEVELOPER_NAME"
 #- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog clean archive -configuration release -sdk iphoneos -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive
-- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog archive -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive
-- xcodebuild -exportArchive -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -exportOptionsPlist $PWD/exportOptions.plist
-- echo "All Files and folder"
-- ls $OUTPUTDIR/
+#- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog archive -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive
+#- xcodebuild -exportArchive -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -exportOptionsPlist $PWD/exportOptions.plist
+
 
 #- travis_retry xcodebuild -workspace $APP_WORKSPACE_PATH -scheme Debug -sdk iphoneos
   #OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 
 #- xcodebuild -workspace $APP_WORKSPACE_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO 
-#1. - xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO | xcpretty -c
 
 #- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release clean archive -archivePath $OUTPUTDIR DEVELOPMENT_TEAM="X5E35DL2Y9"
 #- xcodebuild -exportArchive -archivePath $OUTPUTDIR -exportOptionsPlist exportOptions.plist -exportPath $OUTPUTDIR
@@ -50,6 +49,10 @@ script:
 
 
 #'CODE_SIGN_RESOURCE_RULES_PATH=$(SDKROOT)/ResourceRules.plist'
+
+- echo "All Files and folder"
+- ls $OUTPUTDIR/
+
 after_success:
 - secureCerts/sign-and-upload.sh
 after_script:
