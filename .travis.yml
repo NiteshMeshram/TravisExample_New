@@ -24,11 +24,16 @@ before_install:
 - chmod a+x secureCerts/sign-and-upload.sh
 #- pod install
 script:
+
+- xcodebuild -exportArchive -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -exportFormat ipa -PROVISIONING_PROFILE="$PROVISIONING_PROFILE" -CODE_SIGN_IDENTITY="$DEVELOPER_NAME"
+- echo "All Files and folder"
+- ls $OUTPUTDIR/
+
 #- travis_retry xcodebuild -workspace $APP_WORKSPACE_PATH -scheme Debug -sdk iphoneos
   #OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
 
 #- xcodebuild -workspace $APP_WORKSPACE_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO 
-- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO | xcpretty -c
+#1. - xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO | xcpretty -c
 
 #- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog -sdk iphoneos -configuration Release clean archive -archivePath $OUTPUTDIR DEVELOPMENT_TEAM="X5E35DL2Y9"
 #- xcodebuild -exportArchive -archivePath $OUTPUTDIR -exportOptionsPlist exportOptions.plist -exportPath $OUTPUTDIR
