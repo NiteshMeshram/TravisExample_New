@@ -26,6 +26,7 @@ before_install:
 script:
 
 #- xcodebuild -exportArchive -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -exportFormat ipa -PROVISIONING_PROFILE="$PROVISIONING_PROFILE" -CODE_SIGN_IDENTITY="$DEVELOPER_NAME"
+- xcodebuild -project $APP_PROJ_PATH -scheme TravisCIBlog clean archive -configuration release -sdk iphoneos -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive
 - xcodebuild -exportArchive -archivePath $OUTPUTDIR/TravisCIBlog.xcarchive -exportPath $OUTPUTDIR/TravisCIBlog.ipa -exportOptionsPlist $PWD/exportOptions.plist
 - echo "All Files and folder"
 - ls $OUTPUTDIR/
