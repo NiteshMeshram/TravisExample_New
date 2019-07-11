@@ -199,13 +199,16 @@
 				TargetAttributes = {
 					386E6E4322D49EAD00109006 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					386E6E5A22D49EB000109006 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 386E6E4322D49EAD00109006;
 					};
 					386E6E6522D49EB000109006 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 386E6E4322D49EAD00109006;
 					};
 				};
@@ -458,7 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.gps.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "GPS QA AdHoc Profile";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -479,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.gps.qa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "GPS QA AdHoc Profile";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -499,7 +502,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.gps.qa.TravisCIBlogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisCIBlog.app/TravisCIBlog";
 			};
@@ -520,7 +523,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.gps.qa.TravisCIBlogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TravisCIBlog.app/TravisCIBlog";
 			};
@@ -540,7 +543,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.gps.qa.TravisCIBlogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TravisCIBlog;
 			};
@@ -560,7 +563,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.v2solutions.gps.qa.TravisCIBlogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = TravisCIBlog;
 			};
